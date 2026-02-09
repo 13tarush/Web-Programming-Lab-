@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Harbour Line Route Information</title>
+
+  <!-- External CSS (Experiment 2 Task 2) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS (Experiment 2 Task 1) -->
+  <style>
+    .route-note {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <!-- Inline CSS (Experiment 2 Task 1) -->
+  <h1 style="text-align:center;">Harbour Line – Route Information</h1>
+</header>
+
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="explore-lines.html">View Routes</a>
+  <a href="journey-planner.html">Plan Journey</a>
+  <a href="schedule-table.html">Schedules</a>
+  <a href="service-category.html">Train Types</a>
+  <a href="feedback-form.html">Feedback</a>
+</nav>
+
+<main class="container">
+
+  <!-- Internal CSS usage note -->
+  <p class="route-note">
+    Harbour Line route summary and station details are styled using internal CSS.
+  </p>
+
+  <!-- ROUTE SUMMARY -->
+  <!-- ID selector demo (Experiment 2 Task 3) -->
+  <section class="route-card" id="highlight-route">
+    <h2>Route Summary</h2>
+    <p><strong>Railway Line:</strong> Harbour Line</p>
+    <p><strong>Source Station:</strong> CSMT</p>
+    <p><strong>Destination Station:</strong> Panvel</p>
+    <p><strong>Total Stations:</strong> 12</p>
+  </section>
+
+  <!-- STATIONS LIST -->
+  <section>
+    <h2>Stations on this Route</h2>
+
+    <ol class="station-list route-timeline">
+      <li>CSMT</li>
+      <li>Masjid</li>
+      <li>Sandhurst Road</li>
+      <li>Dockyard Road</li>
+      <li>Reay Road</li>
+      <li>Sewri</li>
+      <li><strong>Vadala Road (Interchange)</strong></li>
+      <li><strong>Kurla (Interchange)</strong></li>
+      <li>Chembur</li>
+      <li>Govandi</li>
+      <li>Vashi</li>
+      <li>Panvel</li>
+    </ol>
+  </section>
+
+  <!-- INTERCHANGE DETAILS -->
+  <section class="interchange-box">
+    <h3>Interchange Connectivity</h3>
+    <ul>
+      <li><strong>Vadala Road:</strong> Connectivity to Western Line</li>
+      <li><strong>Kurla:</strong> Interchange with Central Line</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© Mumbai Suburban Railways Information Portal | Academic Use</p>
+</footer>
+
+</body>
+</html>

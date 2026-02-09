@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Types</title>
+
+  <!-- External CSS (Experiment 2 Task 2) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS (Experiment 2 Task 1) -->
+  <style>
+    .service-note {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <!-- Inline CSS (Experiment 2 Task 1) -->
+  <h1 style="text-align:center;">Train Types</h1>
+</header>
+
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="explore-lines.html">View Routes</a>
+  <a href="journey-planner.html">Plan Journey</a>
+  <a href="schedule-table.html">Schedules</a>
+  <a href="service-category.html">Train Types</a>
+  <a href="feedback-form.html">Feedback</a>
+</nav>
+
+<main class="container">
+
+  <!-- Internal CSS usage note -->
+  <p class="service-note">
+    Service descriptions on this page are styled using internal CSS.
+  </p>
+
+  <section class="route-card">
+    <h2>Types of Railway Services</h2>
+
+    <div class="selection-grid">
+
+      <!-- ID selector demo (Experiment 2 Task 3) -->
+      <div class="select-card" id="highlight-service">
+        <h3>Local Train</h3>
+        <ul>
+          <li>🚉 <strong>Frequent stops</strong></li>
+          <li>⏱ <strong>Slower travel time compared to express</strong></li>
+          <li>👥 <strong>High passenger capacity</strong></li>
+          <li>💰 <strong>Most economical option</strong></li>
+        </ul>
+      </div>
+
+      <div class="select-card" id="highlight-service">
+        <h3>AC Local</h3>
+        <ul>
+          <li>❄️ <strong>Air-conditioned coaches</strong></li>
+          <li>🪑 <strong>Comfortable seating</strong></li>
+          <li>🚉 <strong>Limited stops compared to regular local</strong></li>
+          <li>💳 <strong>Premium ticket pricing</strong></li>
+        </ul>
+      </div>
+
+      <div class="select-card" id="highlight-service">
+        <h3>Express / Premium</h3>
+        <ul>
+          <li>⚡ <strong>Faster travel time</strong></li>
+          <li>🚉 <strong>Limited stops</strong></li>
+          <li>🕒 <strong>Time-efficient service</strong></li>
+          <li>💰 <strong>Higher fare</strong></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© Mumbai Suburban Railways Information Portal | Academic Use</p>
+</footer>
+
+</body>
+</html>

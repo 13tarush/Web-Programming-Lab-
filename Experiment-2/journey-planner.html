@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plan Your Journey</title>
+
+  <!-- External CSS (Experiment 2 Task 2) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS (Experiment 2 Task 1) -->
+  <style>
+    .planner-note {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <!-- Inline CSS (Experiment 2 Task 1) -->
+    <h1 style="text-align:center;">Plan Your Journey</h1>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="explore-lines.html">View Routes</a>
+    <a href="journey-planner.html">Plan Journey</a>
+    <a href="schedule-table.html">Schedules</a>
+    <a href="service-category.html">Train Types</a>
+    <a href="feedback-form.html">Feedback</a>
+  </nav>
+
+  <main class="container">
+
+    <!-- INTRO -->
+    <section class="hero">
+      <p><strong>Plan your journey across Mumbai's suburban railway network!</strong></p>
+      <p>
+        Choose your railway line, preferred train type, and stations
+        to understand the route and interchange points.
+      </p>
+    </section>
+
+    <!-- Internal CSS usage note -->
+    <p class="planner-note">
+      Informational notes on this page are styled using internal CSS.
+    </p>
+
+    <!-- STEP 1: SELECT RAILWAY LINE -->
+    <section>
+      <h2>Select Railway Line</h2>
+
+      <div class="selection-grid">
+
+        <!-- ID selector demo (Experiment 2 Task 3) -->
+        <a href="route-western.html" class="select-card" id="default-line">
+          <h3>Western Line</h3>
+          <p>Churchgate to Borivali</p>
+        </a>
+
+        <a href="route-central.html" class="select-card" id="default-line">
+          <h3>Central Line</h3>
+          <p>CSMT to Thane</p>
+        </a>
+
+        <a href="route-harbour.html" class="select-card" id="default-line">
+          <h3>Harbour Line</h3>
+          <p>CSMT to Panvel</p>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- STEP 2: SELECT TRAIN TYPE (INFORMATIONAL) -->
+    <section>
+      <h2>Select Train Type</h2>
+
+      <div class="selection-grid">
+
+        <div class="select-card">
+          <h3>Local Train</h3>
+          <p>Regular suburban service</p>
+        </div>
+
+        <div class="select-card">
+          <h3>AC Local</h3>
+          <p>Air-conditioned suburban service</p>
+        </div>
+
+        <div class="select-card">
+          <h3>Express / Premium</h3>
+          <p>Limited-stop faster service</p>
+        </div>
+
+      </div>
+
+      <p class="planner-note">
+        Train type selection is shown for informational purposes.
+      </p>
+    </section>
+
+    <!-- STEP 3: STATION SELECTION -->
+    <section class="route-card">
+      <h2>Journey Stations</h2>
+
+      <!-- Form with action (academic completeness) -->
+      <form action="route-western.html">
+
+        <label>Source Station:</label><br>
+        <select required>
+          <option value="">-- Select Source --</option>
+
+          <option>Churchgate</option>
+          <option>Marine Lines</option>
+          <option>Charni Road</option>
+          <option>Mumbai Central</option>
+          <option>Dadar</option>
+          <option>Bandra</option>
+          <option>Andheri</option>
+          <option>Goregaon</option>
+          <option>Borivali</option>
+
+          <option>CSMT</option>
+          <option>Byculla</option>
+          <option>Kurla</option>
+          <option>Ghatkopar</option>
+          <option>Thane</option>
+
+          <option>Vadala Road</option>
+          <option>Chembur</option>
+          <option>Vashi</option>
+          <option>Panvel</option>
+        </select>
+
+        <br><br>
+
+        <label>Destination Station:</label><br>
+        <select required>
+          <option value="">-- Select Destination --</option>
+
+          <option>Churchgate</option>
+          <option>Dadar</option>
+          <option>Andheri</option>
+          <option>Borivali</option>
+
+          <option>CSMT</option>
+          <option>Kurla</option>
+          <option>Ghatkopar</option>
+          <option>Thane</option>
+
+          <option>Vadala Road</option>
+          <option>Vashi</option>
+          <option>Panvel</option>
+        </select>
+
+        <div style="margin-top: 25px;">
+          <input type="submit" value="View Route Information" class="action-link">
+        </div>
+
+        <p style="margin-top:15px; font-size:14px; color:#666;">
+          *Route details and interchange information are displayed
+          based on the selected railway line.
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© Mumbai Suburban Railways Information Portal | Academic Use</p>
+  </footer>
+
+</body>
+</html>

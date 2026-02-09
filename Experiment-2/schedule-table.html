@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Schedules</title>
+
+  <!-- External CSS (Experiment 2 Task 2) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS (Experiment 2 Task 1) -->
+  <style>
+    .schedule-note {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin: 10px 0 20px;
+    }
+
+    table.internal-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table.internal-table th,
+    table.internal-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <!-- Inline CSS (Experiment 2 Task 1) -->
+  <h1 style="text-align:center;">Train Schedules</h1>
+</header>
+
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="explore-lines.html">View Routes</a>
+  <a href="journey-planner.html">Plan Journey</a>
+  <a href="schedule-table.html">Schedules</a>
+  <a href="service-category.html">Train Types</a>
+  <a href="feedback-form.html">Feedback</a>
+</nav>
+
+<main class="container">
+
+  <!-- CSS Animation Alert (Experiment 2 Task 7) -->
+  <div class="delay-alert">
+    ⚠ Train delayed due to technical reasons
+  </div>
+
+  <!-- Internal CSS usage note -->
+  <p class="schedule-note">
+    Train schedule tables on this page are styled using internal CSS.
+  </p>
+
+  <!-- WESTERN LINE SCHEDULE -->
+  <section class="route-card" id="highlight-schedule">
+    <h2>Sample Train Schedule (Western Line)</h2>
+
+    <table class="internal-table">
+      <thead>
+        <tr>
+          <th>Train No</th>
+          <th>Source</th>
+          <th>Destination</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WR101</td>
+          <td>Churchgate</td>
+          <td>Borivali</td>
+          <td>08:15</td>
+          <td>09:05</td>
+        </tr>
+        <tr>
+          <td>WR205</td>
+          <td>Andheri</td>
+          <td>Dadar</td>
+          <td>10:30</td>
+          <td>10:55</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- CENTRAL LINE SCHEDULE -->
+  <section class="route-card" id="highlight-schedule">
+    <h2>Sample Train Schedule (Central Line)</h2>
+
+    <table class="internal-table">
+      <thead>
+        <tr>
+          <th>Train No</th>
+          <th>Source</th>
+          <th>Destination</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CR110</td>
+          <td>CSMT</td>
+          <td>Thane</td>
+          <td>07:45</td>
+          <td>08:35</td>
+        </tr>
+        <tr>
+          <td>CR224</td>
+          <td>Dadar</td>
+          <td>Ghatkopar</td>
+          <td>11:00</td>
+          <td>11:25</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- HARBOUR LINE SCHEDULE -->
+  <section class="route-card" id="highlight-schedule">
+    <h2>Sample Train Schedule (Harbour Line)</h2>
+
+    <table class="internal-table">
+      <thead>
+        <tr>
+          <th>Train No</th>
+          <th>Source</th>
+          <th>Destination</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HR305</td>
+          <td>CSMT</td>
+          <td>Panvel</td>
+          <td>09:20</td>
+          <td>10:15</td>
+        </tr>
+        <tr>
+          <td>HR418</td>
+          <td>Vadala Road</td>
+          <td>Vashi</td>
+          <td>13:40</td>
+          <td>14:05</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© Mumbai Suburban Railways Information Portal | Academic Use</p>
+</footer>
+
+</body>
+</html>
