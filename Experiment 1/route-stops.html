@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Route 101 - Stops</title>
+    <!-- Task 2: Link external CSS -->
+    <link rel="stylesheet" href="../Experiment 2/style.css">
+    <!-- Task 5: Flexbox layout for stop sequence -->
+    <style>
+        .stop-sequence {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+
+        .stop-sequence li {
+            background-color: #e6f7ff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 5px;
+            text-align: center;
+            flex: 1 1 calc(20% - 10px);
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<center>
+    <h1>📍 Route 101 – Stops Information</h1>
+</center>
+
+<hr>
+
+<center>
+    <fieldset>
+        <legend><strong>🚏 Stop Sequence</strong></legend>
+
+        <!-- Apply Flexbox to the stop sequence -->
+        <ol class="stop-sequence">
+            <li><b>Andheri Station</b></li>
+            <li><b>Bandra</b></li>
+            <li><b>Dadar</b></li>
+            <li><b>Mumbai Central</b></li>
+            <li><b>Churchgate</b></li>
+        </ol>
+    </fieldset>
+</center>
+
+<br>
+
+<center>
+    <fieldset>
+        <legend><strong>📌 Stop Landmarks</strong></legend>
+
+        <dl>
+            <dt><strong><b>Andheri</b></strong></dt>
+            <dd><center>Near Metro Station</center></dd>
+
+            <dt><strong><b>Bandra</b></strong></dt>
+            <dd><center>Near Linking Road</center></dd>
+
+            <dt><strong><b>Dadar</b></strong></dt>
+            <dd>Central Railway Hub</dd>
+        </dl>
+    </fieldset>
+</center>
+
+<hr>
+
+<center>
+    <small>Landmark information for passenger convenience</small>
+</center>
+
+<center>
+    <figure>
+        <img src="Mumbai Railway Route Stops and Landmarks.jpg" alt="Railway Route Overview" width="800">
+        <figcaption>
+            <small><b> Major railway stations along Route 101 </b></small>
+        </figcaption>
+    </figure>
+</center>
+
+</body>
+</html>
