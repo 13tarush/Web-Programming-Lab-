@@ -1,0 +1,620 @@
+/* ==========================================
+   GLOBAL RESET
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #F4F6F8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   HEADER & NAVIGATION
+========================================== */
+
+.site-header {
+  background-color: #0A2540;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 28px;
+}
+
+.main-nav {
+  background: #fff;
+  text-align: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.main-nav a {
+  display: inline-block;
+  margin: 0 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0A2540;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #C62828;
+}
+
+@media (max-width: 768px) {
+  .main-nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* ==========================================
+   PAGE CONTAINER
+========================================== */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero {
+  background: linear-gradient(to right, #0A2540, #133A63);
+  color: white;
+  padding: 35px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #E6EEF7;
+}
+
+/* ==========================================
+   ACTION CARDS (HOMEPAGE)
+========================================== */
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.action-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.action-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.15);
+}
+
+.action-card h3 {
+  margin-bottom: 10px;
+  color: #0A2540;
+}
+
+.action-card p {
+  font-size: 14.5px;
+  margin-bottom: 15px;
+}
+
+.action-card a {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background-color: #0A2540;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.action-card a:hover {
+  background-color: #C62828;
+}
+
+/* ==========================================
+   GENERAL CARD STYLE
+========================================== */
+
+.route-card,
+.feedback-card,
+.result-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   SELECTION GRID
+========================================== */
+
+.selection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin: 20px 0 40px;
+}
+
+.select-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-left: 4px solid #E0E0E0;
+}
+
+.select-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.15);
+  border-left-color: #C62828;
+}
+
+/* ==========================================
+   FORMS
+========================================== */
+
+form label {
+  font-weight: 600;
+  color: #0A2540;
+  margin-top: 15px;
+  display: block;
+}
+
+form select,
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: #0A2540;
+  color: white;
+}
+
+form input[type="submit"]:hover {
+  background-color: #C62828;
+}
+
+/* ==========================================
+   ROUTE COLORS
+========================================== */
+
+.western { color: purple; font-weight: 600; }
+.central { color: red; font-weight: 600; }
+.harbour { color: blue; font-weight: 600; }
+.interchange { color: orange; font-weight: bold; }
+
+/* ==========================================
+   PROFESSIONAL ROUTE TIMELINE
+========================================== */
+
+.route-timeline {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+  position: relative;
+}
+
+/* Vertical Line */
+.route-timeline::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #ddd;
+}
+
+/* Each Station */
+.route-timeline li {
+  position: relative;
+  padding: 14px 0 14px 50px;
+  font-size: 16px;
+}
+
+/* Default Station Dot */
+.route-timeline li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: #0A2540;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Interchange Highlight Text */
+.route-timeline li strong {
+  color: #C62828;
+}
+
+/* Interchange Dot */
+.route-timeline li strong::before {
+  background-color: orange;
+}
+
+/* ==========================================
+   INTERCHANGE BOX
+========================================== */
+
+.interchange-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #FFF5F5;
+  border-left: 4px solid #C62828;
+  border-radius: 6px;
+}
+
+/* ==========================================
+   FEEDBACK PAGE
+========================================== */
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form input[type="submit"] {
+  align-self: flex-start;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.site-footer {
+  background-color: #0A2540;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+#searchInput {
+  padding: 12px;
+  font-size: 20px;
+  width: 300px;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#searchInput::placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+}
+/* ==========================================
+   SEARCH BUTTON MATCH SIZE
+========================================== */
+
+#searchButton {
+  height: 48px;               /* Same height as input */
+  padding: 0 20px;            /* Horizontal spacing */
+  font-size: 18px;            /* Bigger text */
+  border-radius: 6px;
+  border: none;
+  background-color: #0A2540;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  vertical-align: middle;
+}
+
+#searchButton:hover {
+  background-color: #C62828;
+}
+
+/* ==========================================
+   SEARCH RESULT TEXT SIZE
+========================================== */
+
+#searchResult {
+  font-size: 20px;       /* Bigger text */
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+/* ==========================================
+   SCHEDULE TABLE STYLING
+========================================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th {
+  background-color: #0A2540;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+  background-color: #F5F8FB;
+}
+
+.delay-alert {
+  background-color: #FFF3CD;
+  color: #856404;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-left: 4px solid #C62828;
+}
+
+/* ==========================================
+   FEEDBACK PAGE - FINAL PROFESSIONAL DESIGN
+========================================== */
+
+.feedback-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.feedback-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* FORM SIDE */
+.feedback-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form label {
+  margin-top: 18px;
+  font-weight: 600;
+  color: #0A2540;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.feedback-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.feedback-form input[type="submit"] {
+  margin-top: 25px;
+  width: 180px;
+  background-color: #0A2540;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.feedback-form input[type="submit"]:hover {
+  background-color: #C62828;
+}
+
+/* IMAGE SIDE */
+.feedback-visual {
+  flex: 1;
+  text-align: center;
+}
+
+.feedback-visual img {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.feedback-visual p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0A2540;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .feedback-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feedback-form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* ==========================================
+   TRAIN TYPES - PREMIUM DESIGN
+========================================== */
+
+.train-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.train-card {
+  text-decoration: none;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  color: #0A2540;
+}
+
+.train-card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.train-card p {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #666;
+}
+
+.train-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Icon Styling */
+.train-icon {
+  font-size: 38px;
+}
+
+/* Individual Accent Borders */
+.train-card.local {
+  border-top: 4px solid purple;
+}
+
+.train-card.ac {
+  border-top: 4px solid #0077b6;
+}
+
+.train-card.express {
+  border-top: 4px solid #C62828;
+}
+/* ===============================
+   TRAIN DETAILS SECTION
+================================= */
+
+.train-details {
+  margin-top: 35px;
+  padding: 30px;
+  background: #f9fbfd;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.train-details img {
+  width: 380px;
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.train-details h3 {
+  margin-bottom: 10px;
+}
+
+.train-details ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* ==========================================
+   TRAIN DETAILS IMAGE LAYOUT
+========================================== */
+
+.train-info-layout {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.train-info-layout img {
+  width: 380px;
+  max-width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.train-info-layout ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.train-info-layout li {
+  margin-bottom: 8px;
+  font-size: 15.5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .train-info-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.train-info-layout img {
+  width: 380px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+

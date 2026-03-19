@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plan Your Journey</title>
+
+  <!-- External CSS (Experiment 2 Task 2) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS (Experiment 2 Task 1) -->
+  <style>
+    .planner-note {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <!-- Inline CSS (Experiment 2 Task 1) -->
+    <h1 style="text-align:center;">Plan Your Journey</h1>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="explore-lines.html">View Routes</a>
+    <a href="journey-planner.html">Plan Journey</a>
+    <a href="schedule-table.html">Schedules</a>
+    <a href="service-category.html">Train Types</a>
+    <a href="feedback-form.html">Feedback</a>
+  </nav>
+
+  <main class="container">
+
+    <!-- INTRO -->
+    <section class="hero">
+      <p><strong>Plan your journey across Mumbai's suburban railway network!</strong></p>
+      <p>
+        Choose your railway line, preferred train type, and stations
+        to understand the route and interchange points.
+      </p>
+    </section>
+
+    <!-- Internal CSS usage note -->
+    <p class="planner-note">
+      Informational notes on this page are styled using internal CSS.
+    </p>
+
+    <!-- STEP 1: SELECT RAILWAY LINE -->
+    <section>
+      <h2>Select Railway Line</h2>
+
+      <div class="selection-grid">
+
+        <!-- ID selector demo (Experiment 2 Task 3) -->
+        <a href="route-western.html" class="select-card" class="default-line">
+          <h3>Western Line</h3>
+          <p>Churchgate to Borivali</p>
+        </a>
+
+        <a href="route-central.html" class="select-card" class="default-line">
+          <h3>Central Line</h3>
+          <p>CSMT to Thane</p>
+        </a>
+
+        <a href="route-harbour.html" class="select-card" class="default-line">
+          <h3>Harbour Line</h3>
+          <p>CSMT to Panvel</p>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="route-card">
+    <h2>Search Station</h2>
+
+    <input type="text" id="searchInput" placeholder="Enter station name">
+    <button id="searchButton" onclick="searchStation()">🔍 Search</button>
+
+    <div id="searchResult" style="margin-top:15px;"></div>
+    </section>
+
+
+    <!-- STEP 2: SELECT TRAIN TYPE (INFORMATIONAL) -->
+    <section>
+      <h2>Select Train Type</h2>
+
+      <div class="selection-grid">
+
+  <a href="service-category.html?train=local" class="select-card">
+    <h3>Local Train</h3>
+    <p>Regular suburban service</p>
+  </a>
+
+  <a href="service-category.html?train=ac" class="select-card">
+    <h3>AC Local</h3>
+    <p>Air-conditioned suburban service</p>
+  </a>
+
+  <a href="service-category.html?train=express" class="select-card">
+    <h3>Express / Premium</h3>
+    <p>Limited-stop faster service</p>
+  </a>
+
+</div>
+
+      <p class="planner-note">
+        Train type selection is shown for informational purposes.
+      </p>
+    </section>
+
+    <!-- STEP 3: STATION SELECTION -->
+    <section class="route-card">
+    <h2>Journey Planner</h2>
+
+    <form id="journeyForm" class="journey-form">
+
+    <div class="form-group">
+      <label>Select Railway Line:</label>
+      <select id="lineSelect" required>
+        <option value="">-- Select Line --</option>
+        <option value="western">Western Line</option>
+        <option value="central">Central Line</option>
+        <option value="harbour">Harbour Line</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Source Station:</label>
+      <select id="sourceStation" required>
+        <option value="">Select Source</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Destination Station:</label>
+      <select id="destinationStation" required>
+        <option value="">Select Destination</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="submit" value="🚆 Find Route">
+    </div>
+
+  </form>
+  
+  <section class="route-card">
+  <h2>Check Train Delay</h2>
+
+  <button id="delayButton" onclick="showDelayNotification()">
+    🚨 Check Live Delay Status
+  </button>
+
+  <div id="delayOutput" style="margin-top:15px;"></div>
+</section>
+
+<section class="route-card">
+  <h2>View Route by Route Number</h2>
+
+  <input type="number" id="routeNumberInput" placeholder="Enter Route Number (101 / 102 / 103)">
+  <button onclick="showRoute()">Show Route</button>
+
+  <div id="routeNumberResult" style="margin-top:15px;"></div>
+</section>
+
+
+<!-- Professional Result Card -->
+  <div id="routeResult" class="result-card"></div>
+
+</section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© Mumbai Suburban Railways Information Portal | Academic Use</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

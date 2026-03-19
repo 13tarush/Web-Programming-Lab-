@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Railway Lines</title>
+
+  <!-- External CSS (Experiment 2 Task 2) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS (Experiment 2 Task 1) -->
+  <style>
+    .lines-note {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <!-- Inline CSS (Experiment 2 Task 1) -->
+  <h1 style="text-align:center;">Explore Railway Lines</h1>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="explore-lines.html">View Routes</a>
+  <a href="journey-planner.html">Plan Journey</a>
+  <a href="schedule-table.html">Schedules</a>
+  <a href="service-category.html">Train Types</a>
+  <a href="feedback-form.html">Feedback</a>
+</nav>
+
+<main class="container">
+
+  <!-- INTRO -->
+  <section class="hero">
+    <p>
+      Mumbai’s suburban railway network is divided into major lines that
+      serve different regions of the city. Below is an overview of the
+      <strong>three major railway lines</strong>: <strong>Western</strong>, <strong>Central</strong>, and <strong>Harbour</strong>.
+    </p>
+  </section>
+
+  <!-- Internal CSS usage note -->
+  <p class="lines-note">
+    Line descriptions on this page are styled using internal CSS.
+  </p>
+
+  <!-- WESTERN LINE -->
+  <section class="route-card line-card" id="highlight-line">
+    <h2>Western Line</h2>
+    <p>
+      The Western Line runs along the western coast of Mumbai and is one
+      of the busiest suburban railway corridors.
+    </p>
+    <p><strong>Route:</strong> Churchgate → Borivali</p>
+    <p><strong>Major Stations:</strong></p>
+    <ul>
+      <li>Churchgate</li>
+      <li>Mumbai Central</li>
+      <li>Dadar (Interchange)</li>
+      <li>Bandra (Interchange)</li>
+      <li>Andheri</li>
+      <li>Borivali</li>
+    </ul>
+    <a href="route-western.html" class="action-link">View Western Line Route</a>
+  </section>
+
+  <!-- CENTRAL LINE -->
+  <section class="route-card line-card" id="highlight-line">
+    <h2>Central Line</h2>
+    <p>
+      The Central Line connects South Mumbai to the central and eastern
+      suburbs, serving key residential and commercial areas.
+    </p>
+    <p><strong>Route:</strong> CSMT → Thane</p>
+    <p><strong>Major Stations:</strong></p>
+    <ul>
+      <li>CSMT</li>
+      <li>Dadar (Interchange)</li>
+      <li>Kurla (Interchange)</li>
+      <li>Ghatkopar (Interchange)</li>
+      <li>Mulund</li>
+      <li>Thane</li>
+    </ul>
+    <a href="route-central.html" class="action-link">View Central Line Route</a>
+  </section>
+
+  <!-- HARBOUR LINE -->
+  <section class="route-card line-card" id="highlight-line">
+    <h2>Harbour Line</h2>
+    <p>
+      The Harbour Line serves eastern and Navi Mumbai regions and provides
+      important connectivity through multiple interchange stations.
+    </p>
+    <p><strong>Route:</strong> CSMT → Panvel</p>
+    <p><strong>Major Stations:</strong></p>
+    <ul>
+      <li>CSMT</li>
+      <li>Vadala Road (Interchange)</li>
+      <li>Kurla (Interchange)</li>
+      <li>Chembur</li>
+      <li>Vashi</li>
+      <li>Panvel</li>
+    </ul>
+    <a href="route-harbour.html" class="action-link">View Harbour Line Route</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© Mumbai Suburban Railways Information Portal | Academic Use</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Types</title>
+
+  <!-- External CSS (Experiment 2 Task 2) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS (Experiment 2 Task 1) -->
+  <style>
+    .service-note {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <!-- Inline CSS (Experiment 2 Task 1) -->
+  <h1 style="text-align:center;">Train Types</h1>
+</header>
+
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="explore-lines.html">View Routes</a>
+  <a href="journey-planner.html">Plan Journey</a>
+  <a href="schedule-table.html">Schedules</a>
+  <a href="service-category.html">Train Types</a>
+  <a href="feedback-form.html">Feedback</a>
+</nav>
+
+<main class="container">
+
+  <!-- Internal CSS usage note -->
+  <p class="service-note">
+    Service descriptions on this page are styled using internal CSS.
+  </p>
+
+<section class="route-card">
+  <h2>Types of Railway Services</h2>
+
+  <div class="train-grid">
+
+    <div class="train-card local" onclick="showTrain('local')">
+      <div class="train-icon">🚆</div>
+      <h3>Local Train</h3>
+      <p>Regular suburban service</p>
+    </div>
+
+    <div class="train-card ac" onclick="showTrain('ac')">
+      <div class="train-icon">❄️</div>
+      <h3>AC Local</h3>
+      <p>Air-conditioned suburban service</p>
+    </div>
+
+    <div class="train-card express" onclick="showTrain('express')">
+      <div class="train-icon">⚡</div>
+      <h3>Express / Premium</h3>
+      <p>Limited-stop faster service</p>
+    </div>
+
+  </div>
+
+  <!-- DYNAMIC INFO SECTION -->
+  <div id="trainDetails" class="train-details hidden">
+    <div id="trainContent"></div>
+  </div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© Mumbai Suburban Railways Information Portal | Academic Use</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
